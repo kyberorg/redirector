@@ -1,0 +1,13 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+# KDE files
+.directory
+
+# Linux stuff
+server.pid
+
+# Project specific
