@@ -1,5 +1,8 @@
 server {
    listen 8080;
    server_name ${SOURCE_DOMAIN};
-   return ${REDIRECT_CODE} ${TARGET};
+
+   location / {
+      return ${REDIRECT_CODE} ${TARGET}$request_uri;
+   }
 }
