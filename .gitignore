@@ -11,3 +11,4 @@
 server.pid
 
 # Project specific
+/.idea/
