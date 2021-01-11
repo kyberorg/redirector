@@ -1,5 +1,5 @@
 server {
    listen 8080;
    server_name ${SOURCE_DOMAIN};
-   rewrite ^ https://${TARGET}$request_uri? permanent;
+   rewrite ^/(.*)$ http://${TARGET}/$1 permanent;
 }
