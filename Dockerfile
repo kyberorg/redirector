@@ -1,4 +1,4 @@
-FROM nginx:1.20
+FROM nginx:1.21
 COPY site.template /tmp/site.template
 ENV SOURCE_DOMAIN=src.domain.tld TARGET_DOMAIN=tgt.domain.tld SCHEME=https
 CMD /bin/bash -c "envsubst < /tmp/site.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
